@@ -15,4 +15,4 @@
 As the name suggest it is a video downloader which allows you to download any youtube video.
 
 ## Author
-Naman Mathur namanmathur77
+Naman Mathur [namanmathur77](https://github.com/NamanMathur77)
