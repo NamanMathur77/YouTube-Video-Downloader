@@ -30,7 +30,15 @@ if n==1:
         videolinks.append(links)
     n=int(input("WANT TO DOWNLOAD ANYTHING?(1-yes,2-no)"))
     if n==1:
-        download()
+        print("The index of video to download it")
+        down=int(input())
+        print(videolinks[down])
+        yt = YouTube(videolinks[down])
+        print("VIDEO YOU ASKED TO DOWNLOAD IS")
+        print(yt.title)
+        print(yt.streams.all())
+        stream=yt.streams.first()
+        stream.download()
         
 # Search
 elif n==2:
@@ -55,7 +63,15 @@ elif n==2:
         videolinks.append(links)
     n=int(input("ANYTHING YOU WANT TO DOWNLOAD?"))
     if n==1:
-        download()
+        print("The index of video to download it")
+        down=int(input())
+        print(videolinks[down])
+        yt = YouTube(videolinks[down])
+        print("VIDEO YOU ASKED TO DOWNLOAD IS")
+        print(yt.title)
+        print(yt.streams.all())
+        stream=yt.streams.first()
+        stream.download()
 # My playlists
 elif n==3:
     playlist=["https://www.youtube.com/user/MIT/videos","https://www.youtube.com/channel/UChPRO1CB_Hvd0TvKRU62iSQ/videos","https://www.youtube.com/channel/UCXsXitjiT_8qPgNEFGPVfBA/videos","https://www.youtube.com/channel/UCOhHO2ICt0ti9KAh-QHvttQ/videos","https://www.youtube.com/user/GaryVaynerchuk/videos"]
